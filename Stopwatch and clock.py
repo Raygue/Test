@@ -69,7 +69,7 @@ class gui(Frame):
             other.run = False
             
             other.masta = Tk()
-            other.masta.title('Stop Watch')
+            other.masta.title('StopWatch')
             other.timer = [0,0,0,0]     # [hours, minutes ,seconds, centiseconds]
             
             other._makewidget()
