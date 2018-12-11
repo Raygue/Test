@@ -16,7 +16,7 @@ class gui(Frame):
         
     def create_widget(self, masta, *args):
         '''makes the widgets'''
-        self.masta.title('Stop Watch and Clock')
+        self.masta.title('Stopwatch and Clock')
         self.createbuttons(masta)
         self.createlabel(masta)
         
@@ -33,7 +33,7 @@ class gui(Frame):
 
     def createbuttons(self, masta, *args):
         '''makes buttons'''
-        stopwatch = Button(masta, text = 'Stop Watch',
+        stopwatch = Button(masta, text = 'StopWatch',
                                  width = 25, command = self.StopWatch)
         stopwatch.grid(row= 1, column = 2, columnspan = 1, rowspan = 1)
         self.stopwatch = stopwatch
@@ -420,7 +420,7 @@ class prep(gui):
 
     list_of_buttons = []
     
-    helping = ['Stop Watch button makes \n a new stopwatch window',
+    helping = ['StopWatch button makes \n a new stopwatch window',
                'Clock button makes the \n label change into a clock',
                'Exit button closes \n the window',
                'Fun button makes a \n puzzle to quit the window'
