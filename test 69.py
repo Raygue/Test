@@ -434,7 +434,7 @@ class prep(gui):
 def main():
     
     global root
-    root = Tk()                         # Membuat window
+    root = Tk()                         # Make window
     my_gui = 'a'
     gui(root)
     root.mainloop()
