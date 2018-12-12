@@ -384,30 +384,26 @@ class gui(Frame):
                          message ='Please Close the Window First')
 
     def Helps(self, event=None, *args):
-        if not prep.clockrun:
-            showinfo(title = 'Alert',
-                      message ='Please Stop the Clock First')
-        else:
-            if not prep.funs:
-                rand = random.randint(0,3)
-                alabel['text'] = prep.helping[rand]
+      if not prep.funs:
+          rand = random.randint(0,3)
+          alabel['text'] = prep.helping[rand]
 
-            elif prep.funs :
-                rand = random.randint(0,7)
-                if prep.helpcounter == 0:
-                    alabel['text'] = prep.helping[4]
-                    prep.helpcounter += 1
-                elif prep.helpcounter == 1:
-                    alabel['text'] = prep.helping[5]
-                    prep.helpcounter += 1
-                elif prep.helpcounter == 2:
-                    alabel['text'] = prep.helping[6]
-                    prep.helpcounter += 1
-                elif prep.helpcounter == 3:
-                    alabel['text'] = prep.helping[7]
-                    prep.helpcounter += 1
-                else:
-                    alabel['text'] = prep.helping[rand]
+      elif prep.funs :
+          rand = random.randint(0,7)
+          if prep.helpcounter == 0:
+              alabel['text'] = prep.helping[4]
+              prep.helpcounter += 1
+          elif prep.helpcounter == 1:
+              alabel['text'] = prep.helping[5]
+              prep.helpcounter += 1
+          elif prep.helpcounter == 2:
+              alabel['text'] = prep.helping[6]
+              prep.helpcounter += 1
+          elif prep.helpcounter == 3:
+              alabel['text'] = prep.helping[7]
+              prep.helpcounter += 1
+          else:
+              alabel['text'] = prep.helping[rand]
 
 class prep(gui):
     '''preparation'''
