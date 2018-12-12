@@ -384,6 +384,7 @@ class gui(Frame):
                          message ='Please Close the Window First')
 
     def Helps(self, event=None, *args):
+        prep.clockrun = True
         if not prep.funs:
             rand = random.randint(0,3)
             alabel['text'] = prep.helping[rand]
